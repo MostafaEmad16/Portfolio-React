@@ -1,0 +1,43 @@
+.project_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project_container .protflio_item {
+  width: 31%;
+  margin-bottom: 50px;
+  background: var(--color-bg-variant);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.protflio_item_img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.protflio_item h3 {
+  margin: 22px 0 35px;
+}
+
+.protflio_item_btns {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 1024px) {
+  .project_container .protflio_item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project_container .protflio_item {
+    width: 100%;
+  }
+}
